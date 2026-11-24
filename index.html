@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/theme-init.js"></script>
+<title>YouTube Sidebar</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="sidebar light" id="sidebar">
+
+  <div class="header">
+    <button class="hamburger" id="menuToggle" type="button" data-tooltip="Menu">
+      <span class="material-icons-outlined">menu</span>
+    </button>
+    <div class="yt-logo">
+      <div class="play-icon"></div>
+      <span>YouTube</span>
+    </div>
+  </div>
+
+  <nav class="menu">
+    <div class="menu-item active">
+      <span class="material-icons-outlined">home</span>
+      <span>Home</span>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons-outlined">explore</span>
+      <span>Explore</span>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons-outlined">bolt</span>
+      <span>Shorts</span>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons-outlined">subscriptions</span>
+      <span>Subscriptions</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="menu-item">
+      <span class="material-icons-outlined">video_library</span>
+      <span>Library</span>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons-outlined">history</span>
+      <span>History</span>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons-outlined">videocam</span>
+      <span>Your videos</span>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons-outlined">schedule</span>
+      <span>Watch later</span>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons-outlined">thumb_up</span>
+      <span>Liked videos</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="menu-item">
+      <span class="material-icons-outlined">settings</span>
+      <span>Settings</span>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons-outlined">flag</span>
+      <span>Report history</span>
+    </div>
+    <div class="menu-item">
+      <span class="material-icons-outlined">help</span>
+      <span>Help</span>
+    </div>
+  </nav>
+
+  <div class="theme-section">
+    <div class="theme-toggle">
+      <button class="theme-btn active-theme" id="lightBtn" type="button" data-tooltip="Light mode">
+        <span class="material-icons-outlined">light_mode</span>
+      </button>
+      <button class="theme-btn" id="darkBtn" type="button" data-tooltip="Dark mode">
+        <span class="material-icons-outlined">dark_mode</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="profile" data-tooltip="Emranullah Rasoli">
+    <div class="avatar">
+      <img src="https://i.ibb.co/RGQJzPhd/file-000000008370820a869f342ee467f678.png" alt="Emranullah Rasoli">
+    </div>
+    <div class="profile-info">
+      <span class="profile-name">Emranullah Rasoli</span>
+      <span class="profile-username">@emranullahrasoli</span>
+    </div>
+    <div class="profile-actions">
+      <button class="profile-more" id="profileMenuBtn" type="button">
+        <span class="material-icons-outlined">more_vert</span>
+      </button>
+      <div class="profile-dropdown" id="profileDropdown">
+        <div class="dropdown-account">
+          <div class="avatar">
+            <img src="https://i.ibb.co/RGQJzPhd/file-000000008370820a869f342ee467f678.png" alt="">
+          </div>
+          <div class="dropdown-account-text">
+            <span class="dropdown-account-name">Emranullah Rasoli</span>
+            <span class="dropdown-account-handle">@emranullahrasoli</span>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <button type="button" class="dropdown-item">
+          <span class="material-icons-outlined">account_circle</span>
+          <span>Your channel</span>
+        </button>
+        <button type="button" class="dropdown-item">
+          <span class="material-icons-outlined">video_settings</span>
+          <span>YouTube Studio</span>
+        </button>
+        <button type="button" class="dropdown-item">
+          <span class="material-icons-outlined">switch_account</span>
+          <span>Switch account</span>
+        </button>
+        <div class="dropdown-divider"></div>
+        <button type="button" class="dropdown-item">
+          <span class="material-icons-outlined">settings</span>
+          <span>Settings</span>
+        </button>
+        <button type="button" class="dropdown-item">
+          <span class="material-icons-outlined">help_outline</span>
+          <span>Help</span>
+        </button>
+        <div class="dropdown-divider"></div>
+        <button type="button" class="dropdown-item danger">
+          <span class="material-icons-outlined">logout</span>
+          <span>Sign out</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<main class="main-content">
+  <p class="watermark">Emranullah Rasoli</p>
+</main>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
